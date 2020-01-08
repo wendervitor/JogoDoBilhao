@@ -1,4 +1,10 @@
-<?php ob_start(); ?>
+<?php 
+ob_start();
+session_start();  
+if($_SESSION['user'] == null){
+	header("location:index.php?id=2");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,25 +17,10 @@
 		<?php include 'page_layout/header.inc';?>
 	</div>
 	<div class="container">
-		<div class="play">
-			<input type="submit" value="Jogar"><br>
+		<div >
+			<button class="playbutton" onclick="location.href = 'gameplay.php?id=0' ;">Jogar</button> <br>
+			
 		</div>
-		<div class="leaderboard">
-			<h1>Leaderboard</h1>
-			<table>
-				<tr>
-					<th>Rank</th>
-					<th>Nome</th>
-					<th>Total</th>
-				</tr>
-			</table>
-		</div>
-		<?php 
-			session_start();
-			//if($_SESSION['user'] != null) echo $_SESSION['user'];
-			//else header("location: index.php");
-		?>
-
 	</div>
 	<div class="footer">
 		<?php include 'page_layout/footer.inc';?>

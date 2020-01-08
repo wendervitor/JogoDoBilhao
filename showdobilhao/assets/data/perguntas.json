@@ -1,0 +1,22 @@
+[
+    {
+        "question": "Quantos Oscares tem Leonardo Di Caprio?",
+        
+        "alternatives": ["Nenhum",
+        "1",
+        "5",
+        "2"],
+ 		
+         "answer": 1
+    },
+    {
+        "question": "lanso a braba?",
+        
+        "alternatives": ["Nenhum",
+        "1",
+        "10",
+        "2"],
+ 		
+         "answer": 1
+    }
+]
