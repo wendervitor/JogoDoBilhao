@@ -24,17 +24,18 @@
 			<h1><?php echo $questions[$id]; ?></h1>
 		</div>
 		<div class="alternativas">
-			<form action="checa.php" method="POST">
-				<h3>
+			<div>
+				<form action="checkAnswer.php" method="GET">
 					<?php 
+						echo "<input type=\"hidden\" name=\"pergunta\" value=\"$id\">";
 						for($i=0;$i<4;$i++) {
-							echo "<input type=\"radio\" name=\"alternativa\" value=\"$i\">";
-							echo $alternatives[$id][$i] ."<br>";
+							$alt = $alternatives[$id][$i];
+							echo "<div class=\"option\">"."<p>".($i+1)."</p>"."</div>"."<input class=\"alternativa\" type=\"submit\" name=\"alternativa\" value=\"$alt\" >"."<br>";
 						}
-						echo "<input type=\"submit\" value=\"Responder\">";
 					?>
-				</h3>
-			</form>
+				</form>
+
+			</div>
 			<div class="estado-atual">
 				<h2>Pontuação: <?php echo $id;?></h2>
 			</div>			

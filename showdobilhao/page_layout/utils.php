@@ -85,6 +85,14 @@
 		}
 		return $answers;
     }
+
+    function getIdAnswered($question,$answer){
+		for ($i = 0; $i<4; $i++){
+		if(strcmp($question[$i], $answer) == 0)
+			return $i;
+		}
+		return -1;
+    }
     
 
 ?>
