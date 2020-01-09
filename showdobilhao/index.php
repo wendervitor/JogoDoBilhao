@@ -1,3 +1,26 @@
+<?php
+  ob_start();
+  session_start();
+  if(isset($_GET["id"])){
+    $id=$_GET["id"];
+    switch ($id) {
+      case '1':
+        
+        break;
+      case '2':
+
+        break;
+      case '3':
+        $_SESSION['user'] = null;
+        session_destroy();
+        break;
+      default:
+        # code...
+        break;
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -22,7 +45,7 @@
         <input type="password" class="field" placeholder="Password" name="senha"><br>
         <input class="btn" type="submit" value="Entrar"><br>
         <div>
-          <a href="cadastro.php">Sign Up</a>
+          <a href="signUp.php">Inscreva-se</a>
         </div>
       </form>
     </div>

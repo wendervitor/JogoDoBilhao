@@ -1,5 +1,4 @@
 <?php
-	
 	/**
 	* Users classe
 	*/
@@ -94,5 +93,8 @@
 		return -1;
     }
     
-
+    function isOver($id,$questions){
+    	if($id>(count($questions)-1)) return 1;
+    	else return 0;
+    }
 ?>

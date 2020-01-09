@@ -9,6 +9,7 @@
 	$questions = getQuestionsArray();
 	$alternatives = getAlternativesArray();
 	$answers = getAnswersArray();
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,7 +19,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="header"><?php include 'page_layout/header.inc';?> </div>
+	<div class="header">
+		<p class="exit"> <a class="btn" href="index.php?id=3">Sair</a></p>
+		<?php include 'page_layout/header.inc';?> 
+	</div>
+
 	<div >
 		<div class="pergunta">
 			<h1><?php echo $questions[$id]; ?></h1>

@@ -18,5 +18,15 @@
         "Tim Maia"],
  		
          "answer": 0
+    },
+    {
+        "question": "O que as estrelas na bandeira do Brasil representa?",
+        
+        "alternatives": ["Contelação",
+        "Estados brasileiros",
+        "Idade de Pedro I ao morrer",
+        "Países lusitanos"],
+        
+         "answer": 1
     }
 ]

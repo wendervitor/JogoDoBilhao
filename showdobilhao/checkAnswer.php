@@ -13,12 +13,19 @@
 		echo "Acertou";
 		//Verificar se o jogo nao acabou, setar cookie etc
 		//pagina de gameover e vencedor
-		/*
 		$newid=$idQuestion+1;
-		setcookie("pontos",$newid);
-		echo $_COOKIE['pontos'];*/
-		//header("location: gameplay.php?id=$newid");
+		if(!isOver($newid,$questions)){
+			$pontos = $_COOKIE["pontos"];
+			if($newid>$pontos) setcookie('pontos',$newid);
+			header("location: gameplay.php?id=$newid");
+		}else{
+			echo "GANHOU";
+			if($newid>$pontos) setcookie('pontos',$newid);
+			header("location: homepage.php");
+		}
 	}else{
 		echo "Errou";
+
+		header("location: homepage.php");
 	}
 ?>
