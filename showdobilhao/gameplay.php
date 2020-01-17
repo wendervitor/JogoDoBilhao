@@ -9,7 +9,7 @@
 	$questions = getQuestionsArray();
 	$alternatives = getAlternativesArray();
 	$answers = getAnswersArray();
-
+		
 ?>
 <!DOCTYPE html>
 <html>

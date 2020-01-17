@@ -41,7 +41,8 @@
 	    $linhasdecode = json_decode($linhas);
 	    fclose($arquivo);
 	    return $linhasdecode;
-    }
+	}
+	
     function verificalogin($decodefile,$login,$senha){
     	foreach ($decodefile as $key) {
     		if($key->login == $login && $key->senha==$senha)return true;
@@ -96,5 +97,6 @@
     function isOver($id,$questions){
     	if($id>(count($questions)-1)) return 1;
     	else return 0;
-    }
+	}
+	
 ?>
