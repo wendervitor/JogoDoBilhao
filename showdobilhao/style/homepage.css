@@ -1,0 +1,17 @@
+.playbutton{
+    display: inline-block;
+    border: solid white;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	font-size: 50px;
+	background-color: white;
+    cursor: pointer;
+	margin-top: 80px;
+}
+
+.points{
+	text-align: center;
+	font-size: 25px;
+}
+

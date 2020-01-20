@@ -1,0 +1,46 @@
+.register-form{
+	display: inline-block;
+	border: solid 1px white;
+	border-radius: 5px;
+	margin-top: 100px;
+	text-align: center;
+	height: 460px;
+	width: 500px;
+	background-color: white;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
+}
+
+.main .register-form .btn{
+	width: 300px;
+}
+
+.input-block{
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.input-block strong{
+	font-size: 30px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.register-field{
+	padding: 10px;
+	margin: 3px 10px;
+	width: 90%;
+}
+
+.input-group{
+	display: flex;
+	flex-direction: row;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+#password{
+	width: 195px;
+}
+

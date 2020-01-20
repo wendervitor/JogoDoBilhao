@@ -1,7 +1,7 @@
 <?php
 ob_start();
 session_start();
-require './page_layout/utils.php';
+require './utils/functions.php';
 $name = $_POST["nome"];
 $email = $_POST["email"];
 $username = $_POST["username"];
@@ -13,9 +13,9 @@ if ($password == $repeatPassword) {
     foreach ($users as $user) {
         if ($user->login == $username) {
             echo 'ERRO';
-            header("location:signUp.php?id=0");
+            header("location: ../pages/signUp.php?id=0");
         } else {
-            $json = file_get_contents("./assets/data/usuarios.json");
+            $json = file_get_contents("../assets/data/usuarios.json");
             $arr = json_decode($json, true);
             $newData = array(
                 'nome' => $name,
@@ -25,8 +25,8 @@ if ($password == $repeatPassword) {
             );
             array_push($arr, $newData);
             $json = json_encode($arr, JSON_PRETTY_PRINT);
-            if (file_put_contents("./assets/data/usuarios.json", $json)) header("location:index.php?id=4");
-            else header("location:signUp.php?id=1");
+            if (file_put_contents("../assets/data/usuarios.json", $json)) header("location: ../index.php?id=4");
+            else header("location: ../pages/signUp.php?id=1");
         }
     }
 }
