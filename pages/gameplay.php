@@ -24,14 +24,14 @@
 		<?php include '../page_layout/header.inc';?> 
 
 	<div >
-		<div class="pergunta">
+		<div class="question">
 			<h1><?php echo $questions[$id]; ?></h1>
 		</div>
 		<div class="alternativas">
 			<div>
 				<form action="../backend/checkAnswer.php" method="GET">
 					<?php 
-						echo "<input type=\"hidden\" name=\"pergunta\" value=\"$id\">";
+						echo "<input type=\"hidden\" name=\"question\" value=\"$id\">";
 						for($i=0;$i<4;$i++) {
 							$alt = $alternatives[$id][$i];
 							echo "<div class=\"option\">"."<p>".($i+1)."</p>"."</div>"."<input class=\"alternativa\" type=\"submit\" name=\"alternativa\" value=\"$alt\" >"."<br>";

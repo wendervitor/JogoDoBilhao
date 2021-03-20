@@ -31,6 +31,7 @@
     	fclose($file);
     	return $linhasdecode;
     }
+
     function getQuestionsArray(){
 		$aux = decodequestions();
 		$questions = [];
@@ -39,6 +40,7 @@
 		}
 		return $questions;
     }
+
     function getAlternativesArray(){
 		$aux = decodequestions();
 		$alternatives = [];
@@ -47,6 +49,7 @@
 		}
 		return $alternatives;
     }
+	
     function getAnswersArray(){
 		$aux = decodequestions();
 		$answers = [];

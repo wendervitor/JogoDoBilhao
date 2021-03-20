@@ -1,3 +1,3 @@
 <?php
-    echo '<div class="footer"><p>Criado por <a href="https://www.instagram.com/_wendervitor/">@_wendervitor</a></p></div>'
+    echo '<div class="footer"><p>Feito com ❤️ por <a href="https://github.com/wendervitor">wendervitor</a></p></div>'
 ?>

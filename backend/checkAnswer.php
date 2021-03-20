@@ -3,7 +3,7 @@
 	session_start();
 	require './utils/functions.php';
 	$answer = $_GET['alternativa'];
-	$idQuestion=$_GET['pergunta'];
+	$idQuestion=$_GET['question'];
 
 	$questions = getQuestionsArray();
 	$alternatives = getAlternativesArray();

@@ -2,31 +2,39 @@
     {
         "question": "Quantos Oscares tem Leonardo Di Caprio?",
         
-        "alternatives": ["Nenhum",
-        "Um",
-        "Dois",
-        "Cinco"],
+        "alternatives": [
+            "Nenhum",
+            "Um",
+            "Dois",
+            "Cinco"
+        ],
  		
          "answer": 1
     },
     {
         "question": "Coroné Antonio Bento, no dia do casamento de sua filha Juliana, convidou quem para tocar?",
         
-        "alternatives": ["Bené Nunes",
-        "Chimbinha",
-        "Post Malone",
-        "Tim Maia"],
+        "alternatives": 
+        [
+            "Bené Nunes",
+            "Chimbinha",
+            "Post Malone",
+            "Tim Maia"
+        ],
  		
-         "answer": 0
+        "answer": 0
     },
     {
         "question": "O que as estrelas na bandeira do Brasil representa?",
         
-        "alternatives": ["Contelação",
-        "Estados brasileiros",
-        "Idade de Pedro I ao morrer",
-        "Países lusitanos"],
-        
+        "alternatives": 
+        [
+            "Constelações",
+            "Estados brasileiros",
+            "Idade de Pedro I ao morrer",
+            "Países lusitanos"
+        ],
+
          "answer": 1
     }
 ]
